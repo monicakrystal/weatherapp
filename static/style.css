@@ -1,0 +1,38 @@
+*{
+  color: #004878;
+}
+
+body {
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+ background: #c4f6f9;
+}
+
+
+#submit-city {
+  height: 30px;
+  color: #004878;
+  background: white;
+  padding: 5px;
+  border: 2px solid #007db3;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+#submit-city:hover {
+  background: #004878;
+  color: white;
+}
+
+#city-input {
+  height: 15px;
+  padding: 5px;
+  border: 2px solid #007db3;
+  background: transparent;
+  outline: none;
+
+}
+

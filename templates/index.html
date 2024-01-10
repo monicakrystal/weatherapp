@@ -2,16 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Weather App</title>
 </head>
 <body>
+    <div class="weather-app">
 
-    <h2>Check Weather</h2>
-    <form method="post">
-        <input type="text" name="city" placeholder="enter city">
-        <input type="submit" value="check weather">
+    <h2>Check The Weather </h2>
 
+    <h2 id="selected-city-weather"> {{weather}} </h2>
+
+    <h1 id="selected-city"> {{city}}</h1>
+
+
+    <form id="form" method="post">
+        <div id="city-input-container">
+        <input id="city-input" type="text" name="city" placeholder="enter city" required>
+        <button id="submit-city" type="submit" value="check weather">check weather</button>
+        </div>
     </form>
-    <header style="background-color:blue;">  {{city}} </header>
+
+    </div>
+
 </body>
 </html>
