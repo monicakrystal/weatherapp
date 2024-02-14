@@ -36,6 +36,8 @@ def get_weather_images(description):
         'overcast': "6"
     }
 
+    weather_images['cloudy'] = 'cloud'
+
     if 'rain' in description:
         return weather_images['rain']
     else:
